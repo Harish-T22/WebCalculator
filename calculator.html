@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="download.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form >
+        <div class="displaydiv">
+            <input type="text" name="display" placeholder="0">
+        </div>
+        <div class="btndiv">
+        <div>
+            <input type="button" name="ac-btn" value="AC" class="operator" onclick="display.value=''">
+            <input type="button" name="c-btn" value="C" class="operator" onclick="display.value=display.value.toString().slice(0,-1)">
+            <input type="button" name="mod-btn" value="%" class="operator" onclick="display.value+='%'">
+            <input type="button" name="div-btn" value="/"  class="operator" onclick="display.value+='/'">
+        </div>
+        <div>
+            <input type="button" name="seven-btn" value="7" onclick="display.value+='7'">
+            <input type="button" name="eight-btn" value="8" onclick="display.value+='8'">
+            <input type="button" name="nine-btn" value="9" onclick="display.value+='9'">
+            <input type="button" name="mul-btn" value="*"  class="operator" onclick="display.value+='*'">
+        </div>
+        <div>
+            <input type="button" name="four-btn" value="4" onclick="display.value+='4'">
+            <input type="button" name="five-btn" value="5" onclick="display.value+='5'">
+            <input type="button" name="six-btn" value="6" onclick="display.value+='6'">
+            <input type="button" name="min-btn" value="-" class="operator" onclick="display.value+='-'">
+        </div>
+        <div>
+            <input type="button" name="one-btn" value="1" onclick="display.value+='1'">
+            <input type="button" name="two-btn" value="2" onclick="display.value+='2'">
+            <input type="button" name="three-btn" value="3" onclick="display.value+='3'">
+            <input type="button" name="plus-btn" value="+" class="operator"  onclick="display.value+='+'">
+        </div>
+        <div>
+            <input type="button" name="sci-btn" value="00" onclick="display.value+='00'">
+            <input type="button" name="zero-btn" value="0" onclick="display.value+='0'">
+            <input type="button" name="dot-btn" value="." onclick="display.value+='.'">
+            <input type="button" name="eq-btn" value="=" class="eq" onclick="display.value=eval(display.value)">
+        </div>
+    </div>
+    </form>
+    </div>
+
+   
+
+</body>
+</html>
